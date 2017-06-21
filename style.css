@@ -1,3 +1,9 @@
+:root{
+  --darkblue: #17426b;
+  --lightblue: #5893bc;
+  --silver: #d7dbce;
+  --grey: #727272
+}
 * {
   margin: 0;
   padding: 0;
