@@ -10,7 +10,24 @@
 <body>
   <header></header>
   <nav></nav>
-  <section id="slide"></section>
+  <section id="slide">
+    <div class="slides-container">
+      <div class="slides slide-two fade">
+        <img src="ressource/slide2.jpg">
+        <div class="slide-text">Front view</div>
+      </div>
+      <div class="slides slide-three fade">
+        <img src="ressource/slide3.jpg">
+        <div class="slide-text">Back view</div>
+      </div>
+      <div class="slides slide-one fade">
+        <img src="ressource/slide1.jpg">
+        <div class="slide-text">Front and back view</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </section>
   <section id="content"></section>
   <section id="video"></section>
   <section id="contact"></section>
