@@ -9,3 +9,111 @@
   padding: 0;
   box-sizing: border-box;
 }
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#content article {
+  width: 100%;
+  min-height: 20em;
+  background-color: var(--darkblue);
+  color: var(--silver);
+}
+#content article:first-child{
+  background-image: url(phone1.png);
+  background-size: cover;
+  background-position: center;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 120%;
+  border-bottom: 3px solid black;
+}
+#content article:first-child h2 {
+
+}
+#content article:first-child p{
+  width: 80%;
+}
+#content article:nth-child(3) {
+  background-color: var(--lightblue);
+  height: 60em;
+}
+#content article:nth-child(3) img{
+  width: 100%;
+  position: relative;
+  top: -15em;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+#content article:nth-child(3) p{
+  position: relative;
+  top: 0;
+  width: 50%;
+  color: black;
+  font-size: 200%;
+  z-index: 1;
+}
+#content article:nth-child(3) p:nth-child(1){
+  top: 2em;
+  left: 5%;
+}
+#content article:nth-child(3) p:last-child{
+  position: relative;
+  top: -21em;
+  text-align: right;
+  left: 46%;
+  width: 50%;
+}
+.featuretitle {
+  text-decoration: underline;
+  text-align: center;
+}
+#content article:nth-child(4), #content article:nth-child(2) {
+  background-image: url(phone3.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#content article:nth-child(5) img {
+  width: 100%;
+  height: auto;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+#video {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--darkblue);
+}
+#video > div {
+  width: 35%;
+  min-height: 10em;
+  margin: 5em;
+}
+#video > div:last-child {
+  background-color: white;
+  overflow: scroll;
+  display: flex;
+  justify-content: space-between;
+  height: 20em;
+}
+#video > div:last-child div {
+}
+#video > div:last-child div div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#video > div:last-child div div p:first-child {
+  text-align: center;
+}
+#video > div:last-child div div p:last-child {
+  text-align: right;
+  width: 60%;
+  border-left: 1px dashed black;
+}
